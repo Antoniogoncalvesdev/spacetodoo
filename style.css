@@ -305,11 +305,12 @@ footer p a{
         height: 14px;
     }
     #ulbar{
-        margin-left: -80px;
+        margin-left: -120px;
     }
     #inputBox{
-        width: 150px;
+        width: 160px;
         height: 40px;
+        margin-left: 5px;
     }
     #subcontainerHelp{
         width: 150px;
@@ -323,5 +324,11 @@ footer p a{
     }
     #color2Help{
         padding: 5px 10px;
+    }
+}
+@media(max-width: 428px){
+ 
+    #ulbar{
+        margin-left: -105px;
     }
 }
