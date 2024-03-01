@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    background-image: url("./img/dark-space.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* subcontainer of/do Main */
+#subMain{
+    background-image: url("./img/astro.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    height: 85vh;
+    width: 600px;
+    overflow-y: scroll;
+}
+
+/* span tag of "flags" / tag das bandeiras*/
+#flags{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background-image: url("./img/USA.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar{
+    width: 5px;
+} 
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: white;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    color: white;
+    margin-top: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+}
+
+#input_container{
+    display: flex;
+    justify-content: center;
+}
+
+/* input */
+#inputBox {
+    height: 50px;
+    width: 270px;
+    border-radius: 2px;
+    border: none;
+    margin-left: 15px;
+    padding-left: 20px;
+}
+
+/* button "ADD" of input / botão "ADD" do input */
+#btn{
+    padding: 15px 30px;
+    border-radius: 2px;
+    border: none;
+    background-image: url("./img/bright-space.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    cursor: pointer;
+}
+
+#containerHelp{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#subcontainerHelp{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 250px;
+    height: 20px;
+    border-radius: 2px;
+    
+}
+/* the two colors saying when a task is pending or done
+    As duas cores falando quando uma tarefa está pendente ou completa
+*/
+#color1Help{
+    padding: 10px 15px;
+    margin: 0px 2px;
+    background-color: orange;
+}
+#color2Help{
+    margin: 0px 2px;
+    padding: 10px 15px;
+    background-color: green;
+}
+#pending{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#done{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Help "?" "button" / "botão" "?" de ajuda */
+#help{
+    border: 1px solid red;
+    color: red;
+    border-radius: 50%;
+    width: 15px;
+    margin-top: 1.5px;
+    font-size: 15px;
+    height: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#abbrTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container ul */
+#containerUlbar{
+    display: flex;
+    justify-content: center;
+}
+/* ul */
+#ulbar{
+    width: 26vw;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* ul li */
+#ulbar li{
+    list-style: none;
+    background-color: white;
+    border-radius: 5px;
+    width: 21.8vw;
+    height: 17px;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-right: 15px solid orange;
+}
+
+/* delet button / botão de deletar */
+.delet_btn{
+    background-image: url("./img/bright-space.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 15px;
+    width: 1.5vw;
+    height: 3vh;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    justify-content: center; 
+    display: flex; 
+    height: 6vh; 
+    background-image: url("./img/astro.jpg");
+    align-items: center;
+}
+footer p{
+    color: white; 
+    font-size: 17px;
+}
+footer p a{
+    text-decoration: none; 
+    color: blue;
+}
+
+/* Resp */
+
+@media(max-width: 1200px){
+    #ulbar li{
+        width: 25vw;
+    }
+    #ulbar{
+        margin-left: -40px;
+    }
+}
+@media(max-width: 1082px){
+    #subMain{
+        width: 500px;
+        height: 70vh;
+    }
+    #inputBox{
+        width: 230px;
+    }
+    #subcontainerHelp{
+        width: 205px;
+        height: 20px;
+    }
+    #color1Help{
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        margin-left: -5px;
+    }
+    #help{
+        display: none;
+    }
+}
+@media(max-width: 984px){
+    #inputBox{
+        width: 220px;
+    }
+}
+
+@media(max-width: 882px){
+    #subMain{
+        width: 450px;
+        height: 65vh;
+    }
+    #inputBox{
+        width: 200px;
+    }
+    #btn{
+        padding: 9px 20px;
+    }
+}
+@media(max-width: 768px){
+    #subMain{
+        width: 400px;
+        height: 60vh;
+    }
+    #ulbar{
+        margin-left: -70px;
+    }
+    #ulbar li{
+        width: 30vw;
+    }
+}
+@media(max-width: 665px){
+    #ulbar{
+        margin-left: -83px;
+    }
+    #ulbar li{
+        width: 33vw;
+    }
+}
+@media(max-width: 579px){
+    #subMain{
+        width: 350px;
+        height: 50vh;
+    }
+    #ulbar li{
+        width: 37vw;
+        height: 15px;
+    }
+    #ulbar{
+        margin-left: -110px;
+    }
+}
+@media(max-width: 519px){
+    #subMain{
+        width: 300px;
+        height: 45vh;
+    }
+    #ulbar li{
+        width: 40vw;
+        height: 10px;
+    }
+    .delet_btn{
+        height: 14px;
+    }
+    #ulbar{
+        margin-left: -80px;
+    }
+    #inputBox{
+        width: 150px;
+        height: 40px;
+    }
+    #subcontainerHelp{
+        width: 150px;
+        height: 20px;
+    }
+    #color1Help{
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        margin-left: -5px;
+        padding: 5px 10px;
+    }
+    #color2Help{
+        padding: 5px 10px;
+    }
+}
