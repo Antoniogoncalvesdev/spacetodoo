@@ -305,7 +305,7 @@ footer p a{
         height: 14px;
     }
     #ulbar{
-        margin-left: -130px;
+        margin-left: -125px;
     }
     #inputBox{
         width: 160px;
@@ -329,6 +329,6 @@ footer p a{
 @media(max-width: 460px){
  
     #ulbar{
-        margin-left: -115px;
+        margin-left: -110px;
     }
 }
