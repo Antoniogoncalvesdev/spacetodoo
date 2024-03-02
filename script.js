@@ -3,6 +3,7 @@ const ulbar = document.querySelector("#ulbar");
 const inputBox = document.querySelector("#inputBox");
 const li = document.createElement("li");
 const flags = document.querySelector("#flags");
+const help = document.querySelector("#help");
 
     //character limitation / limitação de caracters 
     inputBox.addEventListener("input", function(){
@@ -12,6 +13,11 @@ const flags = document.querySelector("#flags");
                 inputBox.value = inputBox.value.slice(0, inputMax); 
             };
     });
+    
+    //Click event when clicking on "?" / Evento de click quando clicar no "?"
+    help.addEventListener("click", function(){
+        alert("Clique em uma tarefa / Click on a task");
+    });
 
     //Click event on the "ADD" button / Evento de click no botão "ADD"
     btn.addEventListener("click", function(){
@@ -19,7 +25,6 @@ const flags = document.querySelector("#flags");
         let li = document.createElement("li");
         let deleteBtn = document.createElement("span");
         deleteBtn.classList.add("delet_btn");
-        let help = document.querySelector("#help");
 
         //Validation if the input is empty and dynamic addition of the "li" and the delete button 
         //Validação se o input está vazio e adição dinâmica do "li" e o botão de delete
@@ -81,7 +86,3 @@ const flags = document.querySelector("#flags");
 
         isUsaFlag = !isUsaFlag;
     });
-        //Click event when clicking on "?" / Evento de click quando clicar no "?"
-        help.addEventListener("click", function(){
-            alert("Clique em uma tarefa / Click on a task");
-        });
