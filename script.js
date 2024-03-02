@@ -44,11 +44,6 @@ const flags = document.querySelector("#flags");
                 li.style.borderRight = "15px solid orange";
             };
         });
-        
-        //Click event when clicking on "?" / Evento de click quando clicar no "?"
-        help.addEventListener("click", function(){
-            alert("Clique em uma tarefa / Click on a task");
-        });
 
         //Click event to delete "li" and "delete" button / Evento de click para deleter o "li" e o "delete" button
         deleteBtn.addEventListener("click", function(){
@@ -86,3 +81,7 @@ const flags = document.querySelector("#flags");
 
         isUsaFlag = !isUsaFlag;
     });
+        //Click event when clicking on "?" / Evento de click quando clicar no "?"
+        help.addEventListener("click", function(){
+            alert("Clique em uma tarefa / Click on a task");
+        });
