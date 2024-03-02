@@ -48,7 +48,6 @@ const flags = document.querySelector("#flags");
         //Click event when clicking on "?" / Evento de click quando clicar no "?"
         help.addEventListener("click", function(){
             alert("Clique em uma tarefa / Click on a task");
-            return;
         });
 
         //Click event to delete "li" and "delete" button / Evento de click para deleter o "li" e o "delete" button
